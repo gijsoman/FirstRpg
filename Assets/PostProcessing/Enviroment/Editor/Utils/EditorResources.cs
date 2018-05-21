@@ -36,7 +36,7 @@ namespace UnityEditor.PostProcessing
         {
             path = string.Empty;
 
-            string searchStr = "/PostProcessing/Editor Resources/";
+            string searchStr = "/PostProcessing/Enviroment/Editor Resources/";
             string str = null;
 
             foreach (var assetPath in AssetDatabase.GetAllAssetPaths())
