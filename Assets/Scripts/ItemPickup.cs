@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 
 public class ItemPickup : Interactable {
+    public override void Interact()
+    {
+        base.Interact();
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        PickUp();
+    }
+
+    private void PickUp()
+    {
+        Debug.Log("Picking Up Object");
+        //Add Item to inventory 
+        Destroy(gameObject);
+    }
 }
